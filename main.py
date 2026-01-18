@@ -16,7 +16,7 @@ recognizer = sr.Recognizer()
 engine = pyttsx3.init()
 engine.setProperty("rate", 170)  # normal speaking speed
 engine.setProperty("volume", 1.0)
-newsapi = "62ba2fcb305341b296bc866bfdbcab12"
+newsapi = "Enter your key here"
 
 
 
@@ -46,7 +46,7 @@ def speak(text):   #new method for speech, used with py game
     
 def aiProcess(command):
     client = OpenAI(
-    api_key="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",
+    api_key="enter your key here",
     )
     completion = client.chat.completions.create( 
     model="gpt-5-nano", 
@@ -124,3 +124,4 @@ if __name__ == "__main__":
         except Exception as e:
             print("Error; {0}".format(e))  #will throw error if audio is not clear or not heard properly
     
+
