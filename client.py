@@ -1,7 +1,7 @@
-from openai import OpenAI
+from openai import OpenAI   #this is just for checking that api is working or not
 
 client = OpenAI(
-    api_key="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",
+    api_key="key",
 )
 completion = client.chat.completions.create( 
  model="gpt-5-nano", 
@@ -11,5 +11,6 @@ completion = client.chat.completions.create(
     ]
  )
 print(completion.choices[0].message.content)
+
 
 
